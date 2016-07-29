@@ -6,8 +6,11 @@ Type=simple
 User=bw
 Group=bw
 Environment=PORT=8010
+Environment=HOST=0.0.0.0
 WorkingDirectory=/home/bw/run
 ExecStart=/usr/bin/java -jar /home/bw/bin/trailing-mouse-pointer.jar
+WatchdogSec=20s
+Restart=on-failure
 
 # Give a reasonable amount of time for the server to start up/shut down
 TimeoutSec=300

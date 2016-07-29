@@ -11,6 +11,8 @@ Environment=HOST=birdwatch.matthiasnehlsen.com
 Environment=CONF_PATH=/home/bw/conf/birdwatch_conf.edn
 WorkingDirectory=/home/bw/run
 ExecStart=/usr/bin/java -jar /home/bw/bin/birdwatch.jar
+WatchdogSec=30s
+Restart=on-failure
 
 # Give a reasonable amount of time for the server to start up/shut down
 TimeoutSec=300

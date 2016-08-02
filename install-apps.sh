@@ -18,7 +18,6 @@ echo
 echo "building BirdWatch TwitterClient"
 cd ~/BirdWatch/Clojure-Websockets/TwitterClient
 lein clean
-lein cljsbuild once release
 lein uberjar
 cp target/uberjar/birdwatch-tc-0.2.0-SNAPSHOT-standalone.jar ~/bin/birdwatch-tc.jar
 

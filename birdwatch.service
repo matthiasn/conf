@@ -8,6 +8,7 @@ Type=simple
 User=bw
 Group=bw
 #Environment=HOST=birdwatch.matthiasnehlsen.com
+Environment=HOST=0.0.0.0
 Environment=CONF_PATH=/home/bw/conf/birdwatch_conf.edn
 WorkingDirectory=/home/bw/run
 ExecStart=/usr/bin/java -jar /home/bw/bin/birdwatch.jar
